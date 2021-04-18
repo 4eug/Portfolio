@@ -1,0 +1,35 @@
+.web {
+    grid-column: 2/16;
+    padding: 2rem;
+
+    &-box__wrapper {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+        grid-gap: 4rem;
+        margin-top: 6rem;
+    }
+
+    // &-box {
+    //     padding: 2rem 0;
+    //     border: 1px solid yellow;
+    //     border-bottom: 4px solid ;
+
+    //     a {
+    //         display: flex;
+    //         flex-direction: column;
+    //         font-size: 2rem;
+    //         text-transform: capitalize;
+    //         text-decoration: none;
+    //         color: black;
+    //         font-family: $tertiary-font;
+    //         transition: color .3s ease-in-out ;
+    //         img {
+    //             align-self: flex-start;
+    //             height: 3rem;
+    //         }
+    //         &:hover {
+    //             color:red;
+    //         }
+    //     }
+    // }
+}

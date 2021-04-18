@@ -1,0 +1,21 @@
+{
+  "name": "eugene",
+  "version": "1.0.0",
+  "description": "Portfolio site",
+  "main": "index.js",
+  "scripts": {
+    "dev": "parcel src/index.html --out-dir development -p 5000",
+    "build": "parcel build src/index.html --out-dir dist --public-url ./"
+  },
+  "author": "Eugene Debrah",
+  "license": "ISC",
+  "dependencies": {
+    "@babel/core": "^7.13.15",
+    "@babel/plugin-transform-runtime": "^7.13.15",
+    "@babel/runtime-corejs3": "^7.13.10",
+    "css": "^3.0.0",
+    "inline-css": "^3.0.0",
+    "parcel-bundler": "^1.12.5",
+    "sass": "^1.32.10"
+  }
+}
