@@ -20,9 +20,9 @@ window.onmousemove = (e) => {
 
 // navigation
 const tl = gsap.timeline({paused:true, reversed: true});
-tl.to('.box', {height: '100vh', duration: .5, transformOrigin: 'bottom', stagger: .3})
+tl.to('.box', {height: '100vh', duration: .2, transformOrigin: 'bottom', stagger: .3})
 tl.to('.mobile-logo', {opacity: '1'})
-tl.to('.nav-main__content', {opacity: '1', visibility: 'visible', yPercent: -5, duration: .5, transformOrigin: 'bottom', stagger: .3})
+tl.to('.nav-main__content', {opacity: '1', visibility: 'visible', yPercent: -5, duration: .2, transformOrigin: 'bottom', stagger: .3})
 
 const navIcon = document.querySelector('.nav-icon');
 navIcon.onclick = function() {

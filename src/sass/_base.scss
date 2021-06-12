@@ -271,8 +271,8 @@ section {
     cursor: pointer;
     transition: all .3s ease-in-out;
     &:hover {
-        background-color: transparent;
-        border: 1.5px solid $white;
+        background-color: black;
+        border: 1.5px solid black;
         color: $white;
     }
 }
