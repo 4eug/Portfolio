@@ -1,8 +1,7 @@
 @font-face {
     font-family: 'Montserrat';
-    src:url('../font/Montserrat-Bold.ttf') format('truetype'),
+    src: url('../font/Montserrat-Bold.ttf') format('truetype'),
         url('../font/Montserrat-Regular.ttf') format('truetype');
-        // url('../font/Calibre-Semibold.svg#Calibre-Semibold') format('svg');
     font-weight: bold;
     font-style: normal;
     font-display: swap;
@@ -12,7 +11,7 @@
 
 @font-face {
     font-family: 'Montserrat';
-    src:url('../font/Montserrat-Bold.ttf') format('truetype'),
+    src: url('../font/Montserrat-Bold.ttf') format('truetype'),
         url('../font/Montserrat-Bold.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
@@ -21,7 +20,7 @@
 
 @font-face {
     font-family: 'Montserrat';
-    src:url('../font/Montserrat-Regular.ttf') format('truetype'),
+    src: url('../font/Montserrat-Regular.ttf') format('truetype'),
         url('../font/Montserrat-Regular.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
@@ -33,9 +32,12 @@
 ---------------------------*/
 
 //fonts
-$primary-font: 'Montserrat-Regular', sans-serif;
-$secondary-font: 'Montserrat-Bold', sans-serif;
-$tertiary-font: 'Montserrat-Bold', sans-serif;
+$primary-font: 'Montserrat-Regular',
+sans-serif;
+$secondary-font: 'Montserrat-Bold',
+sans-serif;
+$tertiary-font: 'Montserrat-Bold',
+sans-serif;
 
 //colors
 $primary-color: #f70909;
@@ -66,23 +68,27 @@ html {
     scroll-behavior: smooth;
     width: 100%;
     height: 100%;
-    
-    @media only screen and (max-width: 62.5em) { // tab-land
+
+    @media only screen and (max-width: 62.5em) {
+        // tab-land
         font-size: 56.25%;
     }
-    
-    @media only screen and (max-width: 56.25em) { // tab-port
-        font-size: 54%; 
+
+    @media only screen and (max-width: 56.25em) {
+        // tab-port
+        font-size: 54%;
     }
 
-    @media only screen and (max-width: 37.5em) { // phone
-        font-size: 51%; 
+    @media only screen and (max-width: 37.5em) {
+        // phone
+        font-size: 51%;
     }
-    
-    @media only screen and (min-width: 112.5em) { // big desktop
+
+    @media only screen and (min-width: 112.5em) {
+        // big desktop
         font-size: 75%; // 1rem = 12px, 12/16 = 75
     }
-    
+
 }
 
 body {
@@ -96,7 +102,8 @@ body {
     width: 100%;
     height: 100%;
 
-    @media only screen and (min-width: 20em) { // big desktop
+    @media only screen and (min-width: 20em) {
+        // big desktop
         overflow-x: scroll;
     }
 }
@@ -134,38 +141,44 @@ section {
         position: absolute;
         top: 50%;
         left: 50%;
-        transform: translate(-50%,-50%);
+        transform: translate(-50%, -50%);
     }
+
     #logo path:nth-child(1) {
         stroke-width: 1;
         stroke-dasharray: 393.5;
         stroke-dashoffset: 393.5;
         animation: line-anim 2s ease forwards;
     }
+
     #logo path:nth-child(2) {
         stroke-width: 1;
         stroke-dasharray: 430;
         stroke-dashoffset: 430;
         animation: line-anim 2s ease forwards .3s;
     }
+
     #logo path:nth-child(3) {
         stroke-width: 1;
         stroke-dasharray: 413;
         stroke-dashoffset: 413;
         animation: line-anim 2s ease forwards .6s;
     }
+
     #logo path:nth-child(4) {
         stroke-width: 1;
         stroke-dasharray: 290;
         stroke-dashoffset: 290;
         animation: line-anim 2s ease forwards .9s;
     }
+
     #logo path:nth-child(5) {
         stroke-width: 1;
         stroke-dasharray: 187;
         stroke-dashoffset: 187;
         animation: line-anim 2s ease forwards 1.2s;
     }
+
     #logo path:nth-child(6) {
         stroke-width: 1;
         stroke-dasharray: 393;
@@ -183,10 +196,12 @@ section {
         stroke-dashoffset: 0;
     }
 }
+
 @keyframes fill {
     from {
         fill: transparent;
     }
+
     to {
         fill: $primary-color;
     }
@@ -198,8 +213,8 @@ section {
 .cursor {
     width: 2rem;
     height: 2rem;
-    border: 2.5px solid $white;
-    border-radius: 50%;
+    border: 2.5px solid $black;
+    border-radius: 100%;
     position: absolute;
     top: -10rem;
     left: -10rem;
@@ -209,15 +224,17 @@ section {
     transition: all .3s ease;
     transition-property: background, transform;
 
-    @media only screen and (max-width: 62.5em) { // tab-land
+    @media only screen and (max-width: 62.5em) {
+        // tab-land
         opacity: 0;
     }
 }
+
 /*--------------------------
     typography
 ---------------------------*/
 .heading-main {
-    font-size: 2.5rem;
+    font-size: 4rem;
     letter-spacing: -10;
     text-transform: capitalize;
 }
@@ -271,6 +288,7 @@ section {
     border: 1.5px solid transparent;
     cursor: pointer;
     transition: all .3s ease-in-out;
+
     &:hover {
         background-color: black;
         border: 1.5px solid black;
@@ -285,19 +303,23 @@ section {
 .pri-color {
     color: $primary-color;
 }
+
 .sec-color {
     color: $secondary-color;
 }
+
 .mb-l {
     margin-bottom: 5rem;
 }
+
 .mb-m {
     margin-bottom: 3rem;
 }
+
 .mb-s {
     margin-bottom: 1.3rem;
 }
+
 .mt-s {
     margin-top: 1rem;
 }
-
