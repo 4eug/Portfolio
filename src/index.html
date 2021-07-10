@@ -61,7 +61,8 @@
                     
                     <h4 class="heading-main"><sup>Software Developer & Designer 👨</sup></h4>
                     <p class="paragraph mb-m">Who is passionate about Technology.</p>
-                    <a href="#contact" class="cta">Contact Me</a>
+                    <a id="contact"
+                    href="#contact" class="cta">Contact Me</a>
                 </div>
             </header>
 
@@ -132,7 +133,7 @@
                     </div>
                 </section>
                   <!-- tool section -->
-                <section class="web" id="web">
+                <section class="web" >
                    
                     <h2 class="heading-2">Socials</h2>
                     <div class="web-box__wrapper">
@@ -167,9 +168,9 @@
                 
                
                 <!-- contact -->
-                <section id="contact" class="contact">
-                    <h5 class="heading-5 sec-color mb-s">Portfolio &mdash;</h5>
-                    <h2 class="heading-2">Have a Look</h2>
+                <section id="portfolio" class="contact">
+                    <h5 class="heading-5 sec-color mb-s">Portfolio</h5>
+                    <h2 class="heading-2">Have a Look 😊</h2>
                     <div class="web-box__wrapper">
                     <div class="marquee">
                         <ul class="marquee-content">
@@ -191,6 +192,7 @@
 
                     
                 </section>
+                
             </main>
 
             <!-- footer -->
@@ -202,6 +204,43 @@
 
         </section>
     </div>
+
+    <script>
+        // distort scroll
+        const body = document.body,
+            scrollWrap = document.getElementsByClassName("smooth-scroll-wrapper")[0],
+            height = scrollWrap.getBoundingClientRect().height - '100px',
+            speed = 0.08;
+
+        var offset = 0;
+
+        body.style.height = Math.floor(height) + "px";
+
+        function smoothScroll() {
+            offset += (window.pageYOffset - offset) * speed;
+
+            var scroll = "translateY(-" + offset + "px) translateZ(0)";
+            scrollWrap.style.transform = scroll;
+
+            callScroll = requestAnimationFrame(smoothScroll);
+        }
+
+        smoothScroll();
+        const content = document.querySelector("section");
+        let currentPos = window.pageYOffset;
+
+        const callDistort = function () {
+            const newPos = window.pageYOffset;
+            const diff = newPos - currentPos;
+            const speed = diff * 0.2;
+
+            content.style.transform = "skewY(" + speed + "deg)";
+            currentPos = newPos;
+            requestAnimationFrame(callDistort);
+        };
+
+        callDistort();
+    </script>
     
     
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.1/gsap.min.js"></script>

@@ -170,40 +170,6 @@
 }
 
 
-
-// text video
-.text-container {
-    width: 25rem;
-    position: relative;
-    overflow: hidden;
-    height: 10rem;
-    margin: 1rem 0 1rem -2rem;
-
-    video {
-        position: absolute;
-        top: 0;
-        width: 24rem;
-        height: 10rem;
-    }
-
-    svg {
-        position: absolute;
-        top: -1rem;
-        left: -.75rem;
-        width: 27rem;
-    }
-
-    span {
-        font-size: 8rem;
-        color: rgba(255, 255, 255, 0);
-        text-transform: lowercase;
-        font-family: $secondary-font;
-        position: absolute;
-        top: 1.5rem;
-        left: 1.5rem;
-    }
-}
-
 // svg {
 //     position: absolute;
 //     right: 0;
@@ -235,7 +201,7 @@
 }
 
 .nav-anim .bar2 {
-    transform: translateX(200%);
+    transform: translateX(100%);
     opacity: 0;
 }
 
