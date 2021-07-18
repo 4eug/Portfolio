@@ -170,30 +170,30 @@
 }
 
 
-svg {
-    position: absolute;
-    right: 0;
-    top: -38%;
-}
+// svg {
+//     position: absolute;
+//     right: 0;
+//     top: -38%;
+// }
 
-svg rect {
-    fill: white;
-    -webkit-mask: url('#mask');
-            mask: url('#mask');
-}
+// svg rect {
+//     fill: white;
+//     -webkit-mask: url('#mask');
+//             mask: url('#mask');
+// }
 
-svg text {
-    font-size: 10rem;
-    fill: black;
-    text-transform: lowercase;
-    letter-spacing: -5px;
-    font-family: $secondary-font;
-}
+// svg text {
+//     font-size: 10rem;
+//     fill: black;
+//     text-transform: lowercase;
+//     letter-spacing: -5px;
+//     font-family: $secondary-font;
+// }
 
-svg > rect {
-    fill: black;
-    width: 100%;
-}
+// svg > rect {
+//     fill: black;
+//     width: 100%;
+// }
 
 // animation 
 .nav-anim .bar1 {
